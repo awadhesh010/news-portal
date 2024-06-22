@@ -5,6 +5,17 @@ import axios from 'axios';
 const API_KEY = '4aae46e3e26b4c13be00d477e06c2bfc';
 const API_URL = `https://newsapi.org/v2/everything`;
 
+
+const api = axios.create({
+  baseURL: process.env.REACT_APP_API_URL,
+  headers: {
+    'Content-Type': 'application/json',
+    'X-API-KEY': process.env.REACT_APP_API_KEY,
+  },
+});
+
+
+
 export const fetchNewsData = createAsyncThunk(
   'news/fetchNewsData',
   async ({ page, category }) => {
