@@ -5,7 +5,7 @@
 Follow these steps to set up the project:
 
 1. **Clone the repository:**
-    git clone <repository-url>
+    git clone (https://github.com/awadhesh010/news-portal.git)
 
 2. **Install dependencies:**
     npm install
